@@ -9,6 +9,7 @@ import Skill from './pages/Skill'
 import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
 import { ArrowUpwardRounded } from '@mui/icons-material'
+import bg from '../src/assets/Trianglify-10s-1280px.png'
 
 function App() {
 const [scrollUp,setScrollUp] = useState(false)
@@ -30,14 +31,14 @@ const [scrollUp,setScrollUp] = useState(false)
 
   return (
     <div>
-      <Header />
-      <div className=''>
+      <div style={{backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
+        <Header />
         <Home />
+      </div>
         <About />
         <Skill />
         <Services />
         <Portfolio />
-      </div>
 
       {scrollUp && <div className='w-full fixed z-10 bottom-0 p-8 flex justify-end' data-aos="fade-up">
         <a href="#Home" className=' bg-gradient-to-b from-violet-600 via-violet-500 to-violet-300 border-voilet-600 shadow-violet-500 p-2 rounded-xl text-white'><ArrowUpwardRounded /></a>
