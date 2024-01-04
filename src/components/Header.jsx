@@ -26,8 +26,8 @@ function Header() {
          <a href='#Home' className='cursor-pointer font-medium border-b-4 whitespace-nowrap border-violet-800/60 hover:border-b-4  duration-500 rounded'>Home</a>
          <a href='#About' className='cursor-pointer font-medium whitespace-nowrap border-violet-800/60 hover:border-b-4  duration-500 rounded'>About Me</a>
          <a href='#skills' className='cursor-pointer font-medium whitespace-nowrap border-violet-800/60 hover:border-b-4  duration-500 rounded'>Skills</a>
-         <a href='#services' className='cursor-pointer font-medium whitespace-nowrap border-violet-800/60 hover:border-b-4  duration-500 rounded'>Services</a>
          <a href='#portfolio' className='cursor-pointer font-medium whitespace-nowrap border-violet-800/60 hover:border-b-4  duration-500 rounded'>Portfolio</a>
+         <a href='#contact' className='cursor-pointer font-medium whitespace-nowrap border-violet-800/60 hover:border-b-4  duration-500 rounded'>Contact</a>
        </ul>
 
        <button className='lg:hidden'>
