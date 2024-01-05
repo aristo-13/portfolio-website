@@ -15,7 +15,7 @@ function Home() {
                 <a href="https://github.com/aristo-13"><GitHub /></a>
             </div>
             <div className=" flex flex-col items-start px-2 lg:px-4 gap-6">
-                <h1 className='text-4xl lg:text-7xl font-bold flex flex-col modal-text' data-aos="fade-in" data-aos-duration="300"><span className='opacity-[0.8]'>Hi!, I am </span> <span>Richmond</span> <span className='text-xl font-normal text-gray-500'>Web Developer</span></h1>
+                <h1 className='text-3xl sm:text-4xl lg:text-7xl font-bold flex flex-col modal-text' data-aos="fade-in" data-aos-duration="300"><span className='opacity-[0.8]'>Hi!, I am </span> <span>Richmond</span> <span className='text-xl font-normal text-gray-500'>Web Developer</span></h1>
                  {/* <p className='text-sm text-gray-500 sm:w-2/3'>High level experience in web design and development knowledge, producing quality work</p> */}
 
                 <div className='flex items-center gap-2'>
