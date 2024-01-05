@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-
+import photo from '../assets/photo.png'
 
 function About() {
 const [currIndex,setCurrIndex] = useState(0)
@@ -14,7 +14,9 @@ const [currIndex,setCurrIndex] = useState(0)
 
       <div className='w-full md:w-[90%] px-auto flex flex-col md:flex-row items-center justify-center'>
          <div className="flex-1 flex justify-center items-center">
-            <div data-aos="fade-in" data-aos-offset="300" className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full bg-gray-500"></div>
+            <div data-aos="fade-in" data-aos-offset="300" className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full bg-gray-500 relative">
+                 <img src={photo} alt="" className="absolute -top-10"/>
+            </div>
          </div>
          <div className='flex-1'>
             <h1 className='px-4 text-violet-700 font-medium'>{currIndex +1}/2</h1>
