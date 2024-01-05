@@ -37,7 +37,7 @@ function Skill() {
         className='text-center p-10 text-3xl font-bold text-blue-950'
         data-aos='fade-in'
       >
-        <span className='text-sm text-gray-500 font-normal'>What I use?</span>
+        <span className='text-sm text-gray-500 font-normal block'>What I use?</span>
         My Skills
       </p>
 

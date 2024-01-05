@@ -5,10 +5,12 @@ function Form() {
 const [name,setName] = useState("")
 const [email,setEmail] = useState("")
 const [message,setMessage] = useState("")
+const [loading,setLoading] = useState(false)
 
 const handleSubmit = (e) => {
  e.preventDefault()
 
+ setLoading(true)
  const service_id = 'service_k8z5cue'
  const template_id = 'template_lytdb8f'
  const user_id = 'BiBMmvXe6nszLLK5P'
@@ -22,6 +24,10 @@ const handleSubmit = (e) => {
 
     emailjs.send(service_id, template_id, templateParams,user_id)
     .then(function(response) {
+       setLoading(false)
+       setEmail("")
+       setName("")
+       setMessage("")
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
        console.log('FAILED...', error);
@@ -43,7 +49,9 @@ const handleSubmit = (e) => {
             <textarea value={message} onChange={(e)=>setMessage(e.target.value)} id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
         </div>
         
-        <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 my-4">Send Message</button>
+        <button type="submit" className="text-white bg-violet-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 my-4 flex justify-center items-center gap-2">
+          {loading && <div className='w-[20px] h-[20px] rounded-xl border-4 border-white border-dashed animate-spin'></div>}
+            Send Message</button>
     </form>
 
   )

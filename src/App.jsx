@@ -33,7 +33,7 @@ const [scrollUp,setScrollUp] = useState(false)
 
   return (
     <div className=' overflow-x-hidden'>
-      <div style={{backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
+      <div className='' style={{backgroundImage: `url(${bg})`, backgroundSize: "cover", backgroundRepeat: "no-repeat"}}>
         <Header />
         <Home />
       </div>

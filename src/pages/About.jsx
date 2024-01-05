@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 
 function About() {
@@ -9,11 +10,11 @@ const [currIndex,setCurrIndex] = useState(0)
   return (
     <div id='About' className='w-full'>
        
-      <p className='text-center p-10 text-3xl font-bold text-blue-950' data-aos="fade-in"><span className='text-sm text-gray-500 font-normal'>Who am I?</span> About Me</p>
+      <p className='text-center p-10 text-3xl font-bold text-blue-950' data-aos="fade-in"><span className='text-sm text-gray-500 font-normal block'>Who am I?</span> About Me</p>
 
       <div className='w-full md:w-[90%] px-auto flex flex-col md:flex-row items-center justify-center'>
          <div className="flex-1 flex justify-center items-center">
-            <div data-aos="slide-right" data-aos-offset="300" className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full bg-gray-500"></div>
+            <div data-aos="fade-in" data-aos-offset="300" className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full bg-gray-500"></div>
          </div>
          <div className='flex-1'>
             <h1 className='px-4 text-violet-700 font-medium'>{currIndex +1}/2</h1>
@@ -29,6 +30,8 @@ const [currIndex,setCurrIndex] = useState(0)
                 <button className='p-2 text-violet-700' onClick={()=>setCurrIndex(0)}><KeyboardDoubleArrowLeftIcon /> Go back</button>
             </div>}
         </div>
+
+        <button className='mx-4 px-4 py-1 rounded-lg border text-violet-800 mt-8 text-lg font-medium'>CV <FileDownloadIcon /></button>
          </div>
         
       </div>
