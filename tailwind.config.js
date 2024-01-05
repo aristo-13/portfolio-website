@@ -5,7 +5,14 @@ export default {
   'node_modules/flowbite-react/lib/esm/**/*.js',
 ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(7px)' },
+        }
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin'),

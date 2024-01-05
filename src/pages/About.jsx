@@ -9,7 +9,7 @@ const [currIndex,setCurrIndex] = useState(0)
   return (
     <div id='About' className='w-full'>
        
-      <p className='text-center p-10 text-3xl font-bold text-blue-950' data-aos="fade-in"><p className='text-sm text-gray-500 font-normal'>Who am I?</p> About Me</p>
+      <p className='text-center p-10 text-3xl font-bold text-blue-950' data-aos="fade-in"><span className='text-sm text-gray-500 font-normal'>Who am I?</span> About Me</p>
 
       <div className='w-full md:w-[90%] px-auto flex flex-col md:flex-row items-center justify-center'>
          <div className="flex-1 flex justify-center items-center">
