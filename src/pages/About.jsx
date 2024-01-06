@@ -33,7 +33,7 @@ const [currIndex,setCurrIndex] = useState(0)
             </div>}
         </div>
 
-        <a href='/RichmondOMensahResume.pdf' download="downloaded_file" className='mx-4 px-4 py-1 rounded-lg border text-violet-800 mt-8 text-lg font-medium'>CV <FileDownloadIcon /></a>
+        <a href='/RichmondOMensahResume.pdf' download="Richmond's Resume" className='mx-4 px-4 py-1 rounded-lg border text-violet-800 mt-8 text-lg font-medium'>CV <FileDownloadIcon /></a>
          </div>
         
       </div>
