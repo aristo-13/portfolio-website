@@ -2,7 +2,10 @@
 import { GitHub, LinkedIn, Twitter, WavesTwoTone } from '@mui/icons-material'
 import React from 'react'
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import CallIcon from '@mui/icons-material/Call';
+import PublicIcon from '@mui/icons-material/Public';
+import photo from '/photo.png'
 
 function Home() {
   return (
@@ -19,17 +22,17 @@ function Home() {
                  {/* <p className='text-sm text-gray-500 sm:w-2/3'>High level experience in web design and development knowledge, producing quality work</p> */}
 
                 <div className='flex items-center gap-2'>
-                  <a href='#contact' className='p-2 text-white text-sm rounded-lg bg-violet-800 mt-8'>Contact Me</a>
-                  <a href='#portfolio' className='p-2 text-white text-sm rounded-lg bg-violet-800 mt-8'>Visit My Works</a>
+                  <a href='#contact' className='p-2 text-white text-sm rounded-lg bg-violet-800 mt-8 flex items-center gap-2'><CallIcon fontSize='sm'/><span className='hidden md:block'>Contact Me</span></a>
+                  <a href='#portfolio' className='p-2 text-white text-sm rounded-lg bg-violet-800 mt-8 flex items-center gap-2'><PublicIcon fontSize='sm'/><span className='hidden md:block'>Visit my Works</span></a>
+                  <a href='/RichmondOMensahResume.pdf' download="Richmond's Resume" className='mx-4 px-4 py-1 rounded-lg border text-violet-800 mt-8 md:text-lg font-medium border-violet-800'>CV <FileDownloadIcon fontSize='sm'/></a>
                 </div>
             </div>
        
      
     
-        <div data-aos="fade-in" className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] bg-gray-500 rounded-full relative overflow-hidden hidden  sm:flex justify-center items-center -order-1 sm:order-1">
-            <p className='text-[10em] absolute -bottom-12 left-5'>👷🏻‍♂️</p>
-     
-      </div>
+        <div data-aos="fade-in" className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] border-b-4 border-b-violet-800 rounded-full relative overflow-hidden hidden sm:flex justify-center items-center -order-1 sm:order-1">
+           <img src={photo} alt="" className="absolute scale-[0.8] -bottom-10 -right-2"/>
+         </div>
 
 
       <a href='#About' className='absolute whitespace-nowrap bottom-5 lg:bottom-14 font-medium text-violet-700'>
