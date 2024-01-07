@@ -23,7 +23,7 @@ const [currIndex,setCurrIndex] = useState(0)
           <div className=" flex overflow-hidden p-4">
             
             {(currIndex === 0) && <div data-aos="fade-in"  data-aos-offset="300" className='text-gray-700 w-full shrink-0 flex flex-col gap-4 items-start'>
-            Richmond is an ambitious mechanical engineering student with a fervent passion for web development. As a full stack developer, he brings a unique blend of engineering problem-solving skills and coding expertise to the table. Currently pursuing a degree in mechanical engineering, Richmond is driven by a relentless pursuit of knowledge in the dynamic field of web development. His proficiency in programming languages and dedication to staying current with the latest technological advancements showcase his commitment to excellence.
+            Richmond is an ambitious mechanical engineering student with a fervent passion for web development. As a web developer, he brings a unique blend of engineering problem-solving skills and coding expertise to the table. Currently pursuing a degree in mechanical engineering, Richmond is driven by a relentless pursuit of knowledge in the dynamic field of web development. His proficiency in programming languages and dedication to staying current with the latest technological advancements showcase his commitment to excellence.
 
                 <button className='p-2 text-violet-700' onClick={()=>setCurrIndex(1)}>Contiue Reading <KeyboardDoubleArrowRightIcon /></button>
             </div>}
