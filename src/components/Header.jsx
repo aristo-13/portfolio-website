@@ -44,11 +44,11 @@ function Header() {
        {Menu &&<div className='fixed -right-4 top-[60px] z-10 flex flex-col justify-center items-start' data-aos='fade-in'>
           <button onClick={()=>setMenu(false)} className='p-2'><CloseOutlined /></button>
          <ul className='flex flex-col justify-center items-center gap-4 pl-2 py-6 px-6  bg-white rounded-full shadow-sm border border-violet-800'>
-            <a href='#Home'><HomeIcon /></a>
-            <a href='#About'><InfoIcon /></a>
-            <a href='#skills'><CodeIcon /></a>
-            <a href='#portfolio'><PublicIcon /></a>
-            <a href='#contact'><CallIcon /></a>
+            <a className='hover:text-violet-800 duration-300' href='#Home'><HomeIcon /></a>
+            <a className='hover:text-violet-800 duration-300' href='#About'><InfoIcon /></a>
+            <a className='hover:text-violet-800 duration-300' href='#skills'><CodeIcon /></a>
+            <a className='hover:text-violet-800 duration-300' href='#portfolio'><PublicIcon /></a>
+            <a className='hover:text-violet-800 duration-300' href='#contact'><CallIcon /></a>
        </ul>
        </div>}
     </div>
